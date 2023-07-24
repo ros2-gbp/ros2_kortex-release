@@ -1,0 +1,28 @@
+ros-rolling-kortex-driver (0.2.0-1bullseye) bullseye; urgency=high
+
+  * Initial Public ROS 2 release of kortex_driver
+  * cxx: fixup compiler warnings (#148 <https://github.com/PickNikRobotics/ros2_kortex/issues/148>)
+  * Make Gripper velocity and force configurable through URDF (#137 <https://github.com/PickNikRobotics/ros2_kortex/issues/137>)
+  * Fix License -> BSD and update maintainers (#146 <https://github.com/PickNikRobotics/ros2_kortex/issues/146>)
+  * Contributors: Alex Moriarty, Anthony Baker, Denis Štogl
+
+ -- Alex Moriarty <alex.moriarty@picknik.ai>  Mon, 17 Jul 2023 03:00:00 -0000
+
+ros-rolling-kortex-driver (0.1.0-1bullseye) bullseye; urgency=high
+
+  * Merged in pr-fix_precommit (pull request #8 <https://github.com/PickNikRobotics/ros2_kortex/issues/8>)
+    clang and pre-commit fixes
+    Approved-by: Andy Zelenak
+  * clang and pre-commit fixes
+  * Merged in pr-ci_setup (pull request #3 <https://github.com/PickNikRobotics/ros2_kortex/issues/3>)
+    Add CI and pre-commit and apply relevant formatting fixes
+    * Add CI, pre commit and clang-format
+    * pre-commit fixes
+    * Add pre-commit docs
+    Approved-by: Andy Zelenak
+  * port robot_description to ros2
+  * Contributors: Vatan Aksoy Tezer, marqrazz
+
+ -- Alex Moriarty <alex.moriarty@picknik.ai>  Sun, 12 Sep 2021 03:00:00 -0000
+
+
