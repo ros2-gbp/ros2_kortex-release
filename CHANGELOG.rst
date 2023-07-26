@@ -2,6 +2,9 @@
 Changelog for package kinova_gen3_6dof_robotiq_2f_85_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.1 (2023-07-26)
+------------------
+
 0.2.0 (2023-07-17)
 ------------------
 * Initial Public ROS 2 release of kinova_gen3_6dof_robotiq_2f_85_moveit_config
