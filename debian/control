@@ -1,0 +1,13 @@
+Source: ros-iron-kortex-bringup
+Section: misc
+Priority: optional
+Maintainer: Marq Rasmussen <marq.rasmussen@picknik.ai>
+Build-Depends: debhelper (>= 9.0.0), ros-iron-ament-cmake, ros-iron-ament-cmake-python, ros-iron-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-iron-kortex-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-iron-controller-manager, ros-iron-gazebo-ros2-control, ros-iron-gripper-controllers, ros-iron-joint-state-broadcaster, ros-iron-joint-state-publisher, ros-iron-joint-trajectory-controller, ros-iron-kortex-description, ros-iron-kortex-driver, ros-iron-launch, ros-iron-launch-ros, ros-iron-rclpy, ros-iron-robotiq-description, ros-iron-rviz2, ros-iron-urdf, ros-iron-xacro, ros-iron-ros-workspace
+Description: Launch file and run-time configurations, e.g.
+ controllers.
