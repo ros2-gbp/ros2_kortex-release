@@ -1,0 +1,12 @@
+Source: ros-rolling-kortex-description
+Section: misc
+Priority: optional
+Maintainer:  <avannobel@kinova.ca>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-kortex-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-joint-state-publisher, ros-rolling-joint-state-publisher-gui, ros-rolling-joint-trajectory-controller, ros-rolling-picknik-reset-fault-controller, ros-rolling-picknik-twist-controller, ros-rolling-robot-state-publisher, ros-rolling-robotiq-description, ros-rolling-rviz2, ros-rolling-ros-workspace
+Description: URDF and xacro description package for Kortex robots This package contains configuration data, 3D models and launch files for Kortex arms and supported grippers
