@@ -1,0 +1,12 @@
+Source: ros-humble-kortex-description
+Section: misc
+Priority: optional
+Maintainer:  <avannobel@kinova.ca>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-ament-cmake, ros-humble-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-humble-kortex-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-joint-state-publisher, ros-humble-joint-state-publisher-gui, ros-humble-joint-trajectory-controller, ros-humble-picknik-reset-fault-controller, ros-humble-picknik-twist-controller, ros-humble-robot-state-publisher, ros-humble-robotiq-description, ros-humble-rviz2, ros-humble-ros-workspace
+Description: URDF and xacro description package for Kortex robots This package contains configuration data, 3D models and launch files for Kortex arms and supported grippers
