@@ -1,0 +1,13 @@
+Source: ros-rolling-kortex-bringup
+Section: misc
+Priority: optional
+Maintainer: Marq Rasmussen <marq.rasmussen@picknik.ai>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-ament-cmake-python, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-kortex-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-controller-manager, ros-rolling-gazebo-ros2-control, ros-rolling-gripper-controllers, ros-rolling-joint-state-broadcaster, ros-rolling-joint-state-publisher, ros-rolling-joint-trajectory-controller, ros-rolling-kortex-description, ros-rolling-kortex-driver, ros-rolling-launch, ros-rolling-launch-ros, ros-rolling-rclpy, ros-rolling-robotiq-description, ros-rolling-rviz2, ros-rolling-urdf, ros-rolling-xacro, ros-rolling-ros-workspace
+Description: Launch file and run-time configurations, e.g.
+ controllers.
