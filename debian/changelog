@@ -1,0 +1,31 @@
+ros-rolling-kortex-bringup (0.2.2-2noble) noble; urgency=high
+
+
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Wed, 09 Aug 2023 00:00:00 -0000
+
+ros-rolling-kortex-bringup (0.2.1-2noble) noble; urgency=high
+
+  * fix missing dependencies (#152 <https://github.com/PickNikRobotics/ros2_kortex/issues/152>)
+    This fixes missing dependencies which were available from source build
+    but were missing from released binary
+  * Contributors: Alex Moriarty
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Wed, 26 Jul 2023 00:00:00 -0000
+
+ros-rolling-kortex-bringup (0.2.0-2noble) noble; urgency=high
+
+  * Initial Public ROS 2 release of kortex_bringup
+  * Make Gripper velocity and force configurable through URDF (#137 <https://github.com/PickNikRobotics/ros2_kortex/issues/137>)
+  * Fix License -> BSD and update maintainers (#146 <https://github.com/PickNikRobotics/ros2_kortex/issues/146>)
+  * Contributors: Alex Moriarty, Anthony Baker
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Mon, 17 Jul 2023 00:00:00 -0000
+
+ros-rolling-kortex-bringup (0.1.0-2noble) noble; urgency=high
+
+
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Sun, 12 Sep 2021 00:00:00 -0000
+
+
