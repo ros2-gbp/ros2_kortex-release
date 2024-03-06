@@ -1,0 +1,37 @@
+ros-rolling-kinova-gen3-7dof-robotiq-2f-85-moveit-config (0.2.2-2noble) noble; urgency=high
+
+  * specify planning pipelines to use (#157 <https://github.com/Kinovarobotics/ros2_kortex/issues/157>)
+  * Refactor MoveIt Launch files (#162 <https://github.com/Kinovarobotics/ros2_kortex/issues/162>)
+  * Add use_external_cable parameter to URDF (#155 <https://github.com/Kinovarobotics/ros2_kortex/issues/155>)
+  * Contributors: Anthony Baker
+
+ -- Anthony Baker <abake48@gmail.com>  Wed, 09 Aug 2023 00:00:00 -0000
+
+ros-rolling-kinova-gen3-7dof-robotiq-2f-85-moveit-config (0.2.1-2noble) noble; urgency=high
+
+  * remove stomp for Humble from ros packages (#153 <https://github.com/PickNikRobotics/ros2_kortex/issues/153>)
+    - STOMP is available if you build and use MoveIt from src but not
+    if you have MoveIt installed from the ros distro
+  * Contributors: Alex Moriarty
+
+ -- Anthony Baker <abake48@gmail.com>  Wed, 26 Jul 2023 00:00:00 -0000
+
+ros-rolling-kinova-gen3-7dof-robotiq-2f-85-moveit-config (0.2.0-2noble) noble; urgency=high
+
+  * Initial Public ROS 2 release of kinova_gen3_7dof_robotiq_2f_85_moveit_config
+  * Make Gripper velocity and force configurable through URDF (#137 <https://github.com/PickNikRobotics/ros2_kortex/issues/137>)
+  * Fault and Twist controller from new repo (#143 <https://github.com/PickNikRobotics/ros2_kortex/issues/143>)
+  * Add camera to 7dof gen3 ignition sim (#141 <https://github.com/PickNikRobotics/ros2_kortex/issues/141>)
+  * add parameter to use sim time to move_group launch (#134 <https://github.com/PickNikRobotics/ros2_kortex/issues/134>)
+  * Add MoveIt Config for 7dof arm with robotiq_2f_85 gripper (#107 <https://github.com/PickNikRobotics/ros2_kortex/issues/107>)
+  * Contributors: Alex Moriarty, Anthony Baker
+
+ -- Anthony Baker <abake48@gmail.com>  Mon, 17 Jul 2023 00:00:00 -0000
+
+ros-rolling-kinova-gen3-7dof-robotiq-2f-85-moveit-config (0.1.0-2noble) noble; urgency=high
+
+
+
+ -- Anthony Baker <abake48@gmail.com>  Sun, 12 Sep 2021 00:00:00 -0000
+
+
