@@ -1,0 +1,52 @@
+ros-rolling-kortex-api (0.2.2-2noble) noble; urgency=high
+
+
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Wed, 09 Aug 2023 00:00:00 -0000
+
+ros-rolling-kortex-api (0.2.1-2noble) noble; urgency=high
+
+  * Change kortex_api header and library install locations (#156 <https://github.com/PickNikRobotics/ros2_kortex/issues/156>)
+    This commit does several two main things:
+    1) kortex_api now only installs the header files and they now do not pollute include
+    2) kortex_driver gets the binary libKortexApiCpp.a itself
+    kortex_driver gets the headers from kortex_api this avoids protobuf errors because
+    those header files and the libKortexApiCpp.a were generated using non-system protobuf
+    kortex_api cannot install the libKortexApiCpp.a because CMake does not allow installing library which was IMPORTED
+    This should fix the debian packages which are currently released
+  * Contributors: Alex Moriarty
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Wed, 26 Jul 2023 00:00:00 -0000
+
+ros-rolling-kortex-api (0.2.0-2noble) noble; urgency=high
+
+  * Initial Public ROS 2 Release of kortex_api
+  * [kortex_api] use CMake FetchContent to get API (#112 <https://github.com/PickNikRobotics/ros2_kortex/issues/112>)
+    * Currently only Linux x86_64 is supported
+  * Contributors: Alex Moriarty
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Mon, 17 Jul 2023 00:00:00 -0000
+
+ros-rolling-kortex-api (0.1.0-2noble) noble; urgency=high
+
+  * Merged in pr-fix_precommit (pull request #8 <https://github.com/PickNikRobotics/ros2_kortex/issues/8>)
+    clang and pre-commit fixes
+    Approved-by: Andy Zelenak
+  * clang and pre-commit fixes
+  * Merged in pr-ci_setup (pull request #3 <https://github.com/PickNikRobotics/ros2_kortex/issues/3>)
+    Add CI and pre-commit and apply relevant formatting fixes
+    * Add CI, pre commit and clang-format
+    * pre-commit fixes
+    * Add pre-commit docs
+    Approved-by: Andy Zelenak
+  * Add ros2_control hardware interface
+    Approved-by: Andy Zelenak
+  * Merged in pr-ros_control (pull request #2 <https://github.com/PickNikRobotics/ros2_kortex/issues/2>)
+    * add ros2_control hardware interface
+    Approved-by: Andy Zelenak
+  * port robot_description to ros2
+  * Contributors: Marq Rasmussen, Vatan Aksoy Tezer, marqrazz
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Sun, 12 Sep 2021 00:00:00 -0000
+
+
