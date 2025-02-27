@@ -23,7 +23,7 @@ tracks:
     release_tag: :{version}
     ros_distro: humble
     vcs_type: git
-    vcs_uri: https://github.com/PickNikRobotics/ros2_kortex.git
+    vcs_uri: https://github.com/Kinovarobotics/ros2_kortex
     version: :{auto}
   iron:
     actions:
