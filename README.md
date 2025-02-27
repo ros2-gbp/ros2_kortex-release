@@ -1,3 +1,33 @@
+## ros2_kortex (humble) - 0.2.3-1
+
+The packages in the `ros2_kortex` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble --track humble ros2_kortex` on `Thu, 27 Feb 2025 21:04:29 -0000`
+
+These packages were released:
+- `kinova_gen3_6dof_robotiq_2f_85_moveit_config`
+- `kinova_gen3_7dof_robotiq_2f_85_moveit_config`
+- `kinova_gen3_lite_moveit_config`
+- `kortex_api`
+- `kortex_bringup`
+- `kortex_description`
+- `kortex_driver`
+
+Version of package(s) in repository `ros2_kortex`:
+
+- upstream repository: https://github.com/Kinovarobotics/ros2_kortex.git
+- release repository: https://github.com/ros2-gbp/ros2_kortex-release.git
+- rosdistro version: `0.2.2-1`
+- old version: `0.2.2-1`
+- new version: `0.2.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## ros2_kortex (iron) - 0.2.2-1
 
 The packages in the `ros2_kortex` repository were released into the `iron` distro by running `/usr/bin/bloom-release --rosdistro iron ros2_kortex` on `Wed, 09 Aug 2023 15:13:47 -0000`
