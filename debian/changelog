@@ -1,0 +1,46 @@
+ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config (0.2.3-1jammy) jammy; urgency=high
+
+  * Repo update (#220 <https://github.com/Kinovarobotics/ros2_kortex/issues/220>)
+    * Updating MoveIt configurations
+    * Updating and restructuring instructions
+  * Update planner_plugin parameters (#199 <https://github.com/Kinovarobotics/ros2_kortex/issues/199>)
+  * Remove outdated config artifacts (#198 <https://github.com/Kinovarobotics/ros2_kortex/issues/198>)
+  * Cleanup robots for visualization & sim (#180 <https://github.com/Kinovarobotics/ros2_kortex/issues/180>)
+  * Update planning pipeline configurations (#187 <https://github.com/Kinovarobotics/ros2_kortex/issues/187>)
+  * Contributors: Marq Rasmussen, Sebastian Castro, Sebastian Jahr, smoya23
+
+ -- Abed Al Rahman Al Mrad <aalmrad@kinova.ca>  Thu, 27 Feb 2025 05:00:00 -0000
+
+ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config (0.2.2-1jammy) jammy; urgency=high
+
+  * specify planning pipelines to use (#157 <https://github.com/Kinovarobotics/ros2_kortex/issues/157>)
+  * Refactor MoveIt Launch files (#162 <https://github.com/Kinovarobotics/ros2_kortex/issues/162>)
+  * Contributors: Anthony Baker
+
+ -- Anthony Baker <abake48@gmail.com>  Wed, 09 Aug 2023 04:00:00 -0000
+
+ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config (0.2.1-1jammy) jammy; urgency=high
+
+
+
+ -- Anthony Baker <abake48@gmail.com>  Wed, 26 Jul 2023 04:00:00 -0000
+
+ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config (0.2.0-1jammy) jammy; urgency=high
+
+  * Initial Public ROS 2 release of kinova_gen3_6dof_robotiq_2f_85_moveit_config
+  * Make Gripper velocity and force configurable through URDF (#137 <https://github.com/PickNikRobotics/ros2_kortex/issues/137>)
+  * Fault and Twist controller from new repo (#143 <https://github.com/PickNikRobotics/ros2_kortex/issues/143>)
+  * Update sim.launch.py (#138 <https://github.com/PickNikRobotics/ros2_kortex/issues/138>)
+  * add parameter to use sim time to move_group launch (#134 <https://github.com/PickNikRobotics/ros2_kortex/issues/134>)
+  * Add moveit config for 6dof gen 3 (#109 <https://github.com/PickNikRobotics/ros2_kortex/issues/109>)
+  * Contributors: Alex Moriarty, Anthony Baker
+
+ -- Anthony Baker <abake48@gmail.com>  Mon, 17 Jul 2023 04:00:00 -0000
+
+ros-humble-kinova-gen3-6dof-robotiq-2f-85-moveit-config (0.1.0-1jammy) jammy; urgency=high
+
+
+
+ -- Anthony Baker <abake48@gmail.com>  Sun, 12 Sep 2021 04:00:00 -0000
+
+
