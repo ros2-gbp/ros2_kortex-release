@@ -7,10 +7,6 @@ repositories:
     type: git
     url: https://github.com/ros-controls/ros2_control.git
     version: humble
-  ros2_control_demos:
-    type: git
-    url: https://github.com/ros-controls/ros2_control_demos.git
-    version: master
   ros2_controllers:
     type: git
     url: https://github.com/ros-controls/ros2_controllers.git
@@ -18,4 +14,8 @@ repositories:
   ros2_robotiq_gripper:
     type: git
     url: https://github.com/picknikrobotics/ros2_robotiq_gripper.git
-    version: main
+    version: b6136bdc866a929bfb096890ca61dde1335ffd30
+  realtime_tools:
+    type: git
+    url: https://github.com/ros-controls/realtime_tools/tree/humble
+    version: humble

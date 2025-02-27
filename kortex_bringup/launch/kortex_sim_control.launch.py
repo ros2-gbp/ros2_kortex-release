@@ -24,7 +24,7 @@ from launch.actions import (
 )
 from launch.event_handlers import OnProcessExit
 from launch.launch_description_sources import PythonLaunchDescriptionSource
-from launch.conditions import IfCondition
+from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import (
     Command,
     FindExecutable,
@@ -51,14 +51,16 @@ def launch_setup(context, *args, **kwargs):
     robot_traj_controller = LaunchConfiguration("robot_controller")
     robot_pos_controller = LaunchConfiguration("robot_pos_controller")
     robot_hand_controller = LaunchConfiguration("robot_hand_controller")
+    robot_lite_hand_controller = LaunchConfiguration("robot_lite_hand_controller")
     launch_rviz = LaunchConfiguration("launch_rviz")
     use_sim_time = LaunchConfiguration("use_sim_time")
+    gripper = LaunchConfiguration("gripper")
 
     robot_controllers = PathJoinSubstitution(
         # https://answers.ros.org/question/397123/how-to-access-the-runtime-value-of-a-launchconfiguration-instance-within-custom-launch-code-injected-via-an-opaquefunction-in-ros2/
         [
             FindPackageShare(description_package),
-            "arms/gen3/" + dof.perform(context) + "dof/config",
+            "arms/" + robot_type.perform(context) + "/" + dof.perform(context) + "dof/config",
             controllers_file,
         ]
     )
@@ -102,7 +104,7 @@ def launch_setup(context, *args, **kwargs):
             robot_controllers,
             " ",
             "gripper:=",
-            "robotiq_2f_85",
+            gripper,
             " ",
         ]
     )
@@ -157,10 +159,23 @@ def launch_setup(context, *args, **kwargs):
         arguments=[robot_pos_controller, "--inactive", "-c", "/controller_manager"],
     )
 
+    robot_model = robot_type.perform(context)
+    is_gen3_lite = "false"
+    if robot_model == "gen3_lite":
+        is_gen3_lite = "true"
+
     robot_hand_controller_spawner = Node(
         package="controller_manager",
         executable="spawner",
         arguments=[robot_hand_controller, "-c", "/controller_manager"],
+        condition=UnlessCondition(is_gen3_lite),
+    )
+
+    robot_hand_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=[robot_lite_hand_controller, "-c", "/controller_manager"],
+        condition=IfCondition(is_gen3_lite),
     )
 
     # Bridge
@@ -374,9 +389,24 @@ def generate_launch_description():
     )
     declared_arguments.append(
         DeclareLaunchArgument(
+            "robot_lite_hand_controller",
+            default_value="gen3_lite_2f_gripper_controller",
+            description="Robot hand controller to start for Gen3_Lite.",
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
             "use_sim_time",
             default_value="true",
             description="Use simulated clock",
+        )
+    )
+    declared_arguments.append(
+        DeclareLaunchArgument(
+            "gripper",
+            default_value="",
+            choices=["robotiq_2f_85", "robotiq_2f_140", "gen3_lite_2f", ""],
+            description="Gripper to use",
         )
     )
     declared_arguments.append(
