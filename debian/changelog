@@ -1,0 +1,18 @@
+ros-jazzy-kinova-gen3-lite-moveit-config (0.2.4-1noble) noble; urgency=high
+
+  * fixed gen3_lite moveit issues (#318 <https://github.com/Kinovarobotics/ros2_kortex/issues/318>)
+  * Modifications to fix moveit issues while controlling Gen3_lite (#316 <https://github.com/Kinovarobotics/ros2_kortex/issues/316>)
+  * Remove Gazebo Classic support and Update for MoveIt Jazzy/Rolling (#228 <https://github.com/Kinovarobotics/ros2_kortex/issues/228>)
+  * Contributors: Abed Al Rahman Al Mrad
+
+ -- Abed Al Rahman Al Mrad <aalmrad@kinova.ca>  Mon, 15 Dec 2025 05:00:00 -0000
+
+ros-jazzy-kinova-gen3-lite-moveit-config (0.2.3-1noble) noble; urgency=high
+
+  * Fixed the Gazebo Fortress Simulation + Separated the arm and gripper control for Gen3_Lite + Fixed bugs (#252 <https://github.com/Kinovarobotics/ros2_kortex/issues/252>)
+  * Added a Moveit2 package for Gen3-Lite (#231 <https://github.com/Kinovarobotics/ros2_kortex/issues/231>)
+  * Contributors: Abed Al Rahman Al Mrad
+
+ -- Abed Al Rahman Al Mrad <aalmrad@kinova.ca>  Thu, 27 Feb 2025 05:00:00 -0000
+
+
