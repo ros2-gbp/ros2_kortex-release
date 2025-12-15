@@ -1,3 +1,33 @@
+## ros2_kortex (jazzy) - 0.2.4-1
+
+The packages in the `ros2_kortex` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --new-track --rosdistro jazzy --track jazzy ros2_kortex` on `Mon, 15 Dec 2025 23:58:32 -0000`
+
+These packages were released:
+- `kinova_gen3_6dof_robotiq_2f_85_moveit_config`
+- `kinova_gen3_7dof_robotiq_2f_85_moveit_config`
+- `kinova_gen3_lite_moveit_config`
+- `kortex_api`
+- `kortex_bringup`
+- `kortex_description`
+- `kortex_driver`
+
+Version of package(s) in repository `ros2_kortex`:
+
+- upstream repository: https://github.com/Kinovarobotics/ros2_kortex.git
+- release repository: https://github.com/ros2-gbp/ros2_kortex-release.git
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.2.4-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## ros2_kortex (humble) - 0.2.3-1
 
 The packages in the `ros2_kortex` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble --track humble ros2_kortex` on `Thu, 27 Feb 2025 21:04:29 -0000`
