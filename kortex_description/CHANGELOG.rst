@@ -2,38 +2,30 @@
 Changelog for package kortex_description
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.4 (2025-12-15)
+------------------
+* Update to parallel_gripper_controller (`#324 <https://github.com/Kinovarobotics/ros2_kortex/issues/324>`_)
+* fixed bringing up the Gen3 wo gripper issue (`#321 <https://github.com/Kinovarobotics/ros2_kortex/issues/321>`_)
+* fixed the gen3_lite fake_hardware issue (`#319 <https://github.com/Kinovarobotics/ros2_kortex/issues/319>`_)
+* fixed gen3_lite moveit issues (`#318 <https://github.com/Kinovarobotics/ros2_kortex/issues/318>`_)
+* Modifications to fix moveit issues while controlling Gen3_lite (`#316 <https://github.com/Kinovarobotics/ros2_kortex/issues/316>`_)
+* modified the kortex trademark name (`#305 <https://github.com/Kinovarobotics/ros2_kortex/issues/305>`_)
+* Fixed pi issue #295 (`#296 <https://github.com/Kinovarobotics/ros2_kortex/issues/296>`_)
+* Replaced file:// with package:// + Added temporary repositories as dependencies (`#275 <https://github.com/Kinovarobotics/ros2_kortex/issues/275>`_)
+* Remove Gazebo Classic support and Update for MoveIt Jazzy/Rolling (`#228 <https://github.com/Kinovarobotics/ros2_kortex/issues/228>`_)
+* Contributors: Abed Al Rahman Al Mrad
+
 0.2.3 (2025-02-27)
 ------------------
-* Added a missing robot description argument: "moveit_active" (`#253 <https://github.com/Kinovarobotics/ros2_kortex/issues/253>`_)
+* Fixed the Gazebo Fortress Simulation + Separated the arm and gripper control for Gen3_Lite + Fixed bugs (`#252 <https://github.com/Kinovarobotics/ros2_kortex/issues/252>`_)
 * Added the empty gripper option for gen3.launch.py (`#242 <https://github.com/Kinovarobotics/ros2_kortex/issues/242>`_)
 * Modified the joint limits of Gen3 and Gen3 Lite robots as per the values in the User Guides (`#241 <https://github.com/Kinovarobotics/ros2_kortex/issues/241>`_)
-* Added  .STL files for the Gen3 7dof meshes (`#235 <https://github.com/Kinovarobotics/ros2_kortex/issues/235>`_)
-* Repo update (`#220 <https://github.com/Kinovarobotics/ros2_kortex/issues/220>`_)
-  * Creating Gen3 Lite specific instructions and launch file
-  * Updating MoveIt configurations
-  * Updating and restructuring instructions
+* Added .STL files for the Gen3 7dof meshes (`#235 <https://github.com/Kinovarobotics/ros2_kortex/issues/235>`_)
+* Added a Moveit2 package for Gen3-Lite (`#231 <https://github.com/Kinovarobotics/ros2_kortex/issues/231>`_)
 * Update gripper descriptions for use on HW (`#206 <https://github.com/Kinovarobotics/ros2_kortex/issues/206>`_)
-  Pass though more hardware parameters for gripper control:
-  * `use_internal_bus_gripper_comm`: specify if gripper comms will pass
-  through the robot internally
-  * `(gripper\_)com_port`: specify the port the gripper can be exected on
-  Use internal comm param in gripper macros:
-  * Consider `use_internal_bus_gripper_comm` param in determination
-  for whether or not to launch a ros2_control instance for the gripper. If
-  `use_internal_bus_gripper_comm` is false and we're not running in
-  simulation, that means we're expecting to communicate with the gripper
-  via USB and we'll need to launch a separate ros2_control instance to
-  control it.
-  Add documentation on `load_robot` macro parameters
-* fake_components->mock_components (`#197 <https://github.com/Kinovarobotics/ros2_kortex/issues/197>`_)
-* Fix mock_hardware and enable simulating gen3_lite (`#196 <https://github.com/Kinovarobotics/ros2_kortex/issues/196>`_)
-  * Add additional guards if user sets use_fake_hardware and use_internal_bus_gripper_comm true
 * Update gen3 lite and gripper macros (`#191 <https://github.com/Kinovarobotics/ros2_kortex/issues/191>`_)
-* Fix wrist with vision mesh (`#195 <https://github.com/Kinovarobotics/ros2_kortex/issues/195>`_)
-* Fix mention of nonexistent STL file (`#194 <https://github.com/Kinovarobotics/ros2_kortex/issues/194>`_)
-* Enable initial position param in kinova xacros (`#190 <https://github.com/Kinovarobotics/ros2_kortex/issues/190>`_)
 * Cleanup robots for visualization & sim (`#180 <https://github.com/Kinovarobotics/ros2_kortex/issues/180>`_)
-* Contributors: Abishalini Sivaraman, David Yackzan, Marq Rasmussen, aalmrad, smoya23
+* Contributors: Abed Al Rahman Al Mrad
 
 0.2.2 (2023-08-09)
 ------------------

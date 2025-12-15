@@ -2,14 +2,17 @@
 Changelog for package kortex_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.2.4 (2025-12-15)
+------------------
+* Remove Gazebo Classic support and Update for MoveIt Jazzy/Rolling (`#228 <https://github.com/Kinovarobotics/ros2_kortex/issues/228>`_)
+* Contributors: Abed Al Rahman Al Mrad
+
 0.2.3 (2025-02-27)
 ------------------
-* Separated the arm and gripper control for Gen3_Lite + Fixed bugs (`#252 <https://github.com/Kinovarobotics/ros2_kortex/issues/252>`_)
-  * Separated the arm and gripper controllers for Gen3_Lite in Kortex_bringup
+* Fixed the Gazebo Fortress Simulation + Separated the arm and gripper control for Gen3_Lite + Fixed bugs (`#252 <https://github.com/Kinovarobotics/ros2_kortex/issues/252>`_)
 * Added the empty gripper option for gen3.launch.py (`#242 <https://github.com/Kinovarobotics/ros2_kortex/issues/242>`_)
 * Fix mock_hardware and enable simulating gen3_lite (`#196 <https://github.com/Kinovarobotics/ros2_kortex/issues/196>`_)
-  * Add additional guards if user sets use_fake_hardware and use_internal_bus_gripper_comm true
-* Contributors: Marq Rasmussen, aalmrad, smoya23
+* Contributors: Abed Al Rahman Al Mrad
 
 0.2.2 (2023-08-09)
 ------------------
