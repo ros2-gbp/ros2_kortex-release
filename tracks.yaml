@@ -97,9 +97,9 @@ tracks:
     name: ros2_kortex
     patches: null
     release_inc: '2'
-    release_repo_url: null
-    release_tag: :{version}
+    release_repo_url: https://github.com/ros2-gbp/ros2_kortex-release.git
+    release_tag: 0.2.5
     ros_distro: rolling
     vcs_type: git
-    vcs_uri: https://github.com/PickNikRobotics/ros2_kortex.git
-    version: :{auto}
+    vcs_uri: https://github.com/Kinovarobotics/ros2_kortex.git
+    version: 0.2.5
