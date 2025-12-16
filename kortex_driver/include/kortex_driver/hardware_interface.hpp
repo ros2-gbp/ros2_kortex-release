@@ -84,7 +84,7 @@ public:
   RCLCPP_SHARED_PTR_DEFINITIONS(KortexMultiInterfaceHardware);
 
   KORTEX_DRIVER_PUBLIC
-  CallbackReturn on_init(const hardware_interface::HardwareInfo & info) final;
+  CallbackReturn on_init(const hardware_interface::HardwareComponentInterfaceParams & params) final;
 
   KORTEX_DRIVER_PUBLIC
   std::vector<hardware_interface::StateInterface> export_state_interfaces() final;
@@ -144,11 +144,13 @@ private:
 
   // Gripper
   k_api::GripperCyclic::MotorCommand * gripper_motor_command_;
-  double gripper_command_position_;
-  double gripper_command_max_velocity_;
-  double gripper_command_max_force_;
-  double gripper_position_;
-  double gripper_velocity_;
+  double gripper_command_position_ = 0.0;
+  double gripper_command_max_velocity_ = 0.0;
+  double gripper_command_max_force_ = 0.0;
+  double gripper_position_ = 0.0;
+  double gripper_velocity_ = 0.0;
+  double gripper_force_command_ = 0.0;
+  double gripper_speed_command_ = 0.0;
 
   rclcpp::Time controller_switch_time_;
   std::atomic<bool> block_write = false;
