@@ -12,7 +12,7 @@ controller_manager:
       type: picknik_twist_controller/PicknikTwistController
 
     robotiq_gripper_controller:
-      type: position_controllers/GripperActionController
+      type: parallel_gripper_action_controller/GripperActionController
 
     fault_controller:
       type: picknik_reset_fault_controller/PicknikResetFaultController
@@ -29,7 +29,6 @@ joint_trajectory_controller:
       - joint_7
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
       - velocity
@@ -53,6 +52,5 @@ twist_controller:
 
 robotiq_gripper_controller:
   ros__parameters:
-    default: true
     joint: robotiq_85_left_knuckle_joint
     allow_stalling: true
