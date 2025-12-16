@@ -2,14 +2,14 @@
 Changelog for package kortex_api
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.2.4 (2025-12-15)
+0.2.5 (2025-12-16)
 ------------------
-* modified the kortex trademark name (`#305 <https://github.com/Kinovarobotics/ros2_kortex/issues/305>`_)
+* No changes for this version
 * Contributors: Abed Al Rahman Al Mrad
 
 0.2.3 (2025-02-27)
 ------------------
-* Package version updates
+* modified the kortex trademark name (`#305 <https://github.com/Kinovarobotics/ros2_kortex/issues/305>`_)
 * Contributors: Abed Al Rahman Al Mrad
 
 0.2.2 (2023-08-09)

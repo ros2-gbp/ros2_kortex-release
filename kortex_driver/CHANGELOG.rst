@@ -2,16 +2,16 @@
 Changelog for package kortex_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.2.4 (2025-12-15)
+0.2.5 (2025-12-16)
 ------------------
-* fix deprecated hardware_interface API (`#327 <https://github.com/Kinovarobotics/ros2_kortex/issues/327>`_)
-* Fixed pi issue #295 (`#296 <https://github.com/Kinovarobotics/ros2_kortex/issues/296>`_)
-* modified the kortex trademark name (`#305 <https://github.com/Kinovarobotics/ros2_kortex/issues/305>`_)
+* Fix deprecated hardware_interface API (`#309 <https://github.com/Kinovarobotics/ros2_kortex/issues/309>`_)
 * Contributors: Abed Al Rahman Al Mrad
 
 0.2.3 (2025-02-27)
 ------------------
 * Add force and velocity hardware interfaces (`#204 <https://github.com/Kinovarobotics/ros2_kortex/issues/204>`_)
+* Fixed pi issue #295 (`#296 <https://github.com/Kinovarobotics/ros2_kortex/issues/296>`_)
+* modified the kortex trademark name (`#305 <https://github.com/Kinovarobotics/ros2_kortex/issues/305>`_)
 * Changing the list of packages maintainers
 * Contributors: Abed Al Rahman Al Mrad
 
