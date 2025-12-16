@@ -1,0 +1,48 @@
+ros-rolling-kortex-bringup (0.2.5-1noble) noble; urgency=high
+
+  * added parallel gripper controller (#329 <https://github.com/Kinovarobotics/ros2_kortex/issues/329>)
+  * Contributors: Abed Al Rahman Al Mrad
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Tue, 16 Dec 2025 05:00:00 -0000
+
+ros-rolling-kortex-bringup (0.2.3-1noble) noble; urgency=high
+
+  * Remove Gazebo Classic support and Update for MoveIt Jazzy/Rolling (#228 <https://github.com/Kinovarobotics/ros2_kortex/issues/228>)
+  * Fixed the Gazebo Fortress Simulation + Separated the arm and gripper control for Gen3_Lite + Fixed bugs (#252 <https://github.com/Kinovarobotics/ros2_kortex/issues/252>)
+  * Added the empty gripper option for gen3.launch.py (#242 <https://github.com/Kinovarobotics/ros2_kortex/issues/242>)
+  * Fix mock_hardware and enable simulating gen3_lite (#196 <https://github.com/Kinovarobotics/ros2_kortex/issues/196>)
+  * Contributors: Abed Al Rahman Al Mrad
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Thu, 27 Feb 2025 05:00:00 -0000
+
+ros-rolling-kortex-bringup (0.2.2-1noble) noble; urgency=high
+
+
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Wed, 09 Aug 2023 04:00:00 -0000
+
+ros-rolling-kortex-bringup (0.2.1-1noble) noble; urgency=high
+
+  * fix missing dependencies (#152 <https://github.com/PickNikRobotics/ros2_kortex/issues/152>)
+    This fixes missing dependencies which were available from source build
+    but were missing from released binary
+  * Contributors: Alex Moriarty
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Wed, 26 Jul 2023 04:00:00 -0000
+
+ros-rolling-kortex-bringup (0.2.0-1noble) noble; urgency=high
+
+  * Initial Public ROS 2 release of kortex_bringup
+  * Make Gripper velocity and force configurable through URDF (#137 <https://github.com/PickNikRobotics/ros2_kortex/issues/137>)
+  * Fix License -> BSD and update maintainers (#146 <https://github.com/PickNikRobotics/ros2_kortex/issues/146>)
+  * Contributors: Alex Moriarty, Anthony Baker
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Mon, 17 Jul 2023 04:00:00 -0000
+
+ros-rolling-kortex-bringup (0.1.0-1noble) noble; urgency=high
+
+
+
+ -- Marq Rasmussen <marq.rasmussen@picknik.ai>  Sun, 12 Sep 2021 04:00:00 -0000
+
+
