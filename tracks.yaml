@@ -72,11 +72,11 @@ tracks:
     patches: null
     release_inc: '1'
     release_repo_url: https://github.com/ros2-gbp/ros2_kortex-release.git
-    release_tag: 0.2.4
+    release_tag: :{version}
     ros_distro: jazzy
     vcs_type: git
     vcs_uri: https://github.com/Kinovarobotics/ros2_kortex.git
-    version: 0.2.4
+    version: :{auto}
   rolling:
     actions:
     - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
