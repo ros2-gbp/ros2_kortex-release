@@ -1,0 +1,12 @@
+Source: ros-jazzy-kortex-api
+Section: misc
+Priority: optional
+Maintainer: Marq Rasmussen <marq.rasmussen@picknik.ai>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-kortex-api
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-ros-workspace
+Description: KINOVA KORTEX™ API
