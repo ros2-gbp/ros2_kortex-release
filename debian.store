@@ -1,1 +1,1 @@
-{"base": "27d2a0bb5482", "parent": "debian/rolling/kinova_gen3_6dof_robotiq_2f_85_moveit_config", "previous": "e37a895467e8", "trim": "", "trimbase": ""}
+{"base": "2a6f24aaa8ff", "parent": "debian/lyrical/kinova_gen3_6dof_robotiq_2f_85_moveit_config", "previous": "c52e0167e152", "trim": "", "trimbase": ""}
