@@ -1,0 +1,12 @@
+Source: ros-lyrical-kortex-driver
+Section: misc
+Priority: optional
+Maintainer: Alex Moriarty <alex.moriarty@picknik.ai>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake, ros-lyrical-hardware-interface, ros-lyrical-kortex-api, ros-lyrical-pluginlib, ros-lyrical-rclcpp, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/kortex_driver/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-kortex-driver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-hardware-interface, ros-lyrical-kortex-api, ros-lyrical-pluginlib, ros-lyrical-rclcpp, ros-lyrical-ros-workspace
+Description: ROS2 driver package for the Kinova Robot Hardware.
